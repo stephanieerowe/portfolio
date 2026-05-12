@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A portfolio starter site with a focused home page, about page, project highlights, and contact details."
+    />
+    <title> Stephanie Rowe | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="scripts/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="index.html" aria-label="Home">
+          <span class="brand-mark brand-photo">
+            <img src="images/headshot_crop.png" alt="Portrait of Stephanie Rowe" />
+          </span>
+          <span class="brand-text">
+            <strong>Stephanie Rowe</strong>
+            <small>Developer</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+
+        <nav id="primary-navigation" class="site-nav" data-open="false">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="about.html">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content">
+      <section class="hero section">
+        <div class="container hero-grid reveal">
+          <div class="hero-copy">
+            <p class="eyebrow">Full-stack builder | AI practitioner | Always learning</p>
+            <h1>Solving problems across the stack, from AI to infrastructure.</h1>
+            <p class="lead">
+              I'm <strong>Stephanie</strong>, a full-stack engineer who works across backend systems, frontend interfaces, and machine learning—with a strong focus on AI applications and intelligent solutions.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="about.html">Learn more about me</a>
+              <a class="button button-secondary" href="#projects">View projects</a>
+            </div>
+          </div>
+
+          <aside class="hero-card">
+            <p class="card-label">Quick snapshot</p>
+            <ul class="stat-list">
+              <li>
+                <strong>Full-stack</strong>
+                <span>Backend, frontend, infrastructure</span>
+              </li>
+              <li>
+                <strong>AI & ML</strong>
+                <span>LLMs, data pipelines, automation</span>
+              </li>
+              <li>
+                <strong>Approach</strong>
+                <span>Scalable, thoughtful solutions</span>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Featured work</p>
+            <h2>Selected projects worth showing first.</h2>
+            <p>
+              These placeholders give you a starting point for the kinds of projects most portfolio sites should highlight.
+            </p>
+          </div>
+
+          <div class="card-grid">
+            <article class="project-card">
+              <p class="project-tag">AI System</p>
+              <h3>LLM Automation Pipeline</h3>
+              <p>Built an end-to-end system using LLMs for data extraction, document processing, and intelligent routing.</p>
+              <a href="#contact">Ask for details</a>
+            </article>
+
+            <article class="project-card">
+              <p class="project-tag">Full-stack Web</p>
+              <h3>Data Dashboard & API</h3>
+              <p>Designed and built a backend API with real-time data processing, paired with an intuitive analytics frontend.</p>
+              <a href="#contact">Ask for details</a>
+            </article>
+
+            <article class="project-card">
+              <p class="project-tag">ML Application</p>
+              <h3>Predictive Analytics Tool</h3>
+              <p>End-to-end machine learning project with model training, deployment, and a user-facing interface.</p>
+              <a href="#contact">Ask for details</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-surface">
+        <div class="container split-layout reveal">
+          <div>
+            <p class="eyebrow">Core strengths</p>
+            <h2>Useful skills to show on day one.</h2>
+          </div>
+
+          <div class="skill-list">
+            <span>Backend systems</span>
+            <span>Python, Node.js, APIs</span>
+            <span>Machine learning pipelines</span>
+            <span>LLM integration & prompt engineering</span>
+            <span>Frontend frameworks (React, Vue)</span>
+            <span>Database design & optimization</span>
+            <span>Cloud infrastructure</span>
+            <span>Data visualization</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container reveal">
+          <div class="section-heading narrow">
+            <p class="eyebrow">Process</p>
+            <h2>How I approach projects.</h2>
+          </div>
+
+          <div class="timeline">
+            <article>
+              <span>01</span>
+              <h3>Understand</h3>
+              <p>Analyze the problem deeply—whether it's a business need, data challenge, or technical constraint.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Design</h3>
+              <p>Architect a solution that's scalable, maintainable, and appropriate for the problem at hand.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Execute</h3>
+              <p>Build with clean code, thorough testing, and a focus on impact and performance.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="container contact-panel reveal">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Ready to collaborate or hire?</h2>
+            <p>
+              Add your email, GitHub, LinkedIn, and any other links here once you’re ready.
+            </p>
+          </div>
+
+          <div class="contact-links">
+            <a href="mailto:you@example.com">you@example.com</a>
+            <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>Built for <span id="year"></span> by Your Name.</p>
+        <a href="#content">Back to top</a>
+      </div>
+    </footer>
+  </body>
+</html>

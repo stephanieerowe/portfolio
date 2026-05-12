@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="About page for a portfolio starter site, including background, values, and skills."
+    />
+    <title>About | Your Name</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="scripts/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="index.html" aria-label="Home">
+          <span class="brand-mark brand-photo">
+            <img src="images/profile.jpg" alt="Portrait of Stephanie Rowe" />
+          </span>
+          <span class="brand-text">
+            <strong>Your Name</strong>
+            <small>Designer / Developer</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+
+        <nav id="primary-navigation" class="site-nav" data-open="false">
+          <a href="index.html">Home</a>
+          <a href="about.html" aria-current="page">About</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content">
+      <section class="page-hero section">
+        <div class="container reveal">
+          <p class="eyebrow">About me</p>
+          <h1>A short story about what I do and how I work.</h1>
+          <p class="lead narrow">
+            Use this page to expand on your background, the tools you like, what kind of work you want, and what makes your
+            approach different.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container about-grid reveal">
+          <article class="content-card">
+            <p class="card-label">Background</p>
+            <h2>Who I am.</h2>
+            <p>
+              I'm a builder who moves fluidly across the entire tech stack. I started with web development, moved into systems thinking and backend architecture, and have spent recent years deep in AI—exploring LLMs, machine learning pipelines, and intelligent automation.
+            </p>
+            <p>
+              I'm genuinely excited by problems that require cross-domain thinking: building systems that are both technically sound and user-focused, or using AI to solve real problems in creative ways.
+            </p>
+          </article>
+
+          <article class="content-card accent-card">
+            <p class="card-label">What I value</p>
+            <ul class="value-list">
+              <li>Solving real problems, not just following trends.</li>
+              <li>Code that is readable, testable, and maintainable.</li>
+              <li>Understanding the "why" before jumping to implementation.</li>
+              <li>Systems that are both powerful and pragmatic.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section alt-surface">
+        <div class="container reveal">
+          <div class="section-heading narrow">
+            <p class="eyebrow">Toolkit</p>
+            <h2>What I work with.</h2>
+          </div>
+
+          <div class="stack-grid">
+            <div class="stack-item">
+              <h3>Backend & Systems</h3>
+              <p>Python, Node.js, databases, APIs, microservices, cloud infrastructure (AWS, GCP).</p>
+            </div>
+            <div class="stack-item">
+              <h3>AI & ML</h3>
+              <p>LLMs, prompt engineering, transformer models, data pipelines, model deployment.</p>
+            </div>
+            <div class="stack-item">
+              <h3>Frontend & UX</h3>
+              <p>React, Vue, TypeScript, responsive design, data visualization, user-focused interfaces.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container reveal">
+          <div class="section-heading narrow">
+            <p class="eyebrow">Timeline</p>
+            <h2>Simple milestones you can customize later.</h2>
+          </div>
+
+          <div class="timeline timeline-compact">
+            <article>
+              <span>01</span>
+              <h3>Started learning</h3>
+              <p>Add when you first got into web design or development.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Built my first projects</h3>
+              <p>Include the kinds of projects that helped you grow.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Now</h3>
+              <p>Describe the kind of work or role you want next.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>Built for <span id="year"></span> by Your Name.</p>
+        <a href="#content">Back to top</a>
+      </div>
+    </footer>
+  </body>
+</html>
