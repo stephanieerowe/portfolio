@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/png" href="images/SR%20logo.png" />
     <link rel="stylesheet" href="styles/main.css" />
     <script src="scripts/main.js" defer></script>
   </head>
@@ -51,9 +52,9 @@
         <div class="container hero-grid reveal">
           <div class="hero-copy">
             <p class="eyebrow">Full-stack builder | AI practitioner | Always learning</p>
-            <h1>Solving problems across the stack, from AI to infrastructure.</h1>
+            <h1>Solving problems across the stack.</h1>
             <p class="lead">
-              I'm <strong>Stephanie</strong>, a full-stack engineer who works across backend systems, frontend interfaces, and machine learning—with a strong focus on AI applications and intelligent solutions.
+              I'm <strong>Stephanie</strong>, and I like building practical things that are actually useful to people. I work across backend systems, frontend interfaces, and machine learning, with a strong interest in AI applications and thoughtful product experiences.
             </p>
             <div class="hero-actions">
               <a class="button button-primary" href="about.html">Learn more about me</a>
@@ -85,31 +86,128 @@
         <div class="container reveal">
           <div class="section-heading">
             <p class="eyebrow">Featured work</p>
-            <h2>Selected projects worth showing first.</h2>
+            <h2>Projects that show the range of what I build.</h2>
             <p>
-              Project placeholders.
+              A small set of personal and course projects with enough detail to make the page feel polished without overwhelming the viewer.
             </p>
           </div>
 
-          <div class="card-grid">
+          <div class="project-showcase">
+            <article class="project-card project-card-featured">
+              <div class="project-card-top">
+                <p class="project-tag">Personal Project</p>
+                <span class="project-meta">Pride STEM Website</span>
+              </div>
+              <h3>Pride STEM Website</h3>
+              <p>
+                Full-stack conference website for Pride STEM Canada, a national nonprofit dedicated to celebrating and advancing the contributions of the 2SLGBTQ+ community in STEM. The site brings together conference information, registration details, sponsorship content, governance pages, and organizational updates in one public-facing experience.
+              </p>
+              <p>
+                I focused on a clean content structure that could support a large amount of information without feeling crowded. The layout leans on reusable sections, clear hierarchy, and smooth motion so the site can grow as new pages and announcements are added.
+              </p>
+              <ul class="project-points">
+                <li>Conference information architecture</li>
+                <li>Reusable responsive sections</li>
+                <li>Built for future content updates</li>
+              </ul>
+              <div class="project-tags">
+                <span>Next.js</span>
+                <span>React</span>
+                <span>Framer Motion</span>
+                <span>React Bootstrap</span>
+                <span>CSS Modules</span>
+                <span>Firebase</span>
+                <span>Stripe</span>
+                <span>Resend</span>
+                <span>GitLab CI/CD</span>
+                <span>Azure Static Web Apps</span>
+              </div>
+              <a href="https://www.psc-fsc.ca/" target="_blank" rel="noreferrer">Live site</a>
+            </article>
+
             <article class="project-card">
-              <p class="project-tag">AI System</p>
-              <h3>LLM Automation Pipeline</h3>
-              <p>Built an end-to-end system using LLMs for data extraction, document processing, and intelligent routing.</p>
+              <div class="project-card-top">
+                <p class="project-tag">CSCI 3130</p>
+                <span class="project-meta">Software Engineering</span>
+              </div>
+              <h3>SwapNest</h3>
+              <p>
+                Full-stack Android mobile application for local, location-aware item bartering between two user roles: providers and receivers. Instead of selling items for money, SwapNest lets people trade what they have for what they need.
+              </p>
+              <p>
+                Providers can create listings with photos, item condition, location, and tags, while receivers browse nearby items on a map, filter by category or condition, submit trade requests, and track request status. The app also includes in-app chat, push notifications, transaction history, and post-trade rating flows to keep the exchange process organized.
+              </p>
+              <ul class="project-points">
+                <li>Role-based provider and receiver flows</li>
+                <li>Nearby discovery with maps and geolocation</li>
+                <li>Trade requests, chat, and realtime updates</li>
+              </ul>
+              <div class="project-tags">
+                <span>Java</span>
+                <span>Android Studio</span>
+                <span>Gradle</span>
+                <span>Firebase Authentication</span>
+                <span>Firestore</span>
+                <span>Realtime Database</span>
+                <span>Firebase Storage</span>
+                <span>Firebase Cloud Messaging</span>
+                <span>Google Maps SDK</span>
+                <span>GeoFire</span>
+                <span>Play Services Location</span>
+                <span>Retrofit</span>
+                <span>Material Components</span>
+                <span>AndroidX</span>
+                <span>JUnit</span>
+                <span>Mockito</span>
+                <span>Espresso</span>
+              </div>
               <a href="#contact">Ask for details</a>
             </article>
 
             <article class="project-card">
-              <p class="project-tag">Full-stack Web</p>
-              <h3>Data Dashboard & API</h3>
-              <p>Designed and built a backend API with real-time data processing, paired with an intuitive analytics frontend.</p>
-              <a href="#contact">Ask for details</a>
-            </article>
-
-            <article class="project-card">
-              <p class="project-tag">ML Application</p>
-              <h3>Predictive Analytics Tool</h3>
-              <p>End-to-end machine learning project with model training, deployment, and a user-facing interface.</p>
+              <div class="project-card-top">
+                <p class="project-tag">CSCI 2691</p>
+                <span class="project-meta">Web Project</span>
+              </div>
+              <h3>YooYyaa Immigration</h3>
+              <p>
+                Yooyyaa Immigration is a responsive informational website for an immigration consultancy. It presents services, team information, FAQ content, contact forms, and an admin landing page for managing submissions.
+              </p>
+              <p>
+                The site was designed as a public-facing marketing and lead capture tool, helping prospective clients learn about services, contact the team, and submit inquiries. It also includes a lightweight admin interface for reviewing or recording submissions.
+              </p>
+              <ul class="project-points">
+                <li>Service pages and imagery for clear marketing</li>
+                <li>Contact form and server endpoint for lead capture</li>
+                <li>JSON-driven content for easy updates</li>
+                <li>Admin route support for managing submissions</li>
+                <li>Accessible, responsive layout for all screen sizes</li>
+                <li>Built with semantic HTML and visible focus states</li>
+              </ul>
+              <p>
+                Accessibility was a core goal throughout the build: semantic HTML, keyboard-friendly interaction, descriptive labels and alt text, strong contrast, and ARIA support where needed for complex widgets such as accordions.
+              </p>
+              <p>
+                The project was completed in a collaborative MERN-style workflow with separate frontend and backend responsibilities, code review through pull requests, and shared linting and local tooling to keep the implementation consistent.
+              </p>
+              <div class="project-tags">
+                <span>React</span>
+                <span>Vite</span>
+                <span>JSX</span>
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>MongoDB</span>
+                <span>Mongoose</span>
+                <span>Tailwind CSS</span>
+                <span>Custom CSS Modules</span>
+                <span>ESLint</span>
+                <span>Fetch API</span>
+                <span>JSON Content</span>
+                <span>Express Middleware</span>
+                <span>GitHub</span>
+                <span>VS Code</span>
+                <span>Windows</span>
+              </div>
               <a href="#contact">Ask for details</a>
             </article>
           </div>
@@ -124,14 +222,18 @@
           </div>
 
           <div class="skill-list">
-            <span>Backend systems</span>
-            <span>Python, Node.js, APIs</span>
-            <span>Machine learning pipelines</span>
-            <span>LLM integration & prompt engineering</span>
-            <span>Frontend frameworks (React, Vue)</span>
-            <span>Database design & optimization</span>
-            <span>Cloud infrastructure</span>
-            <span>Data visualization</span>
+            <span>Java, Python, and JavaScript</span>
+            <span>React, Vite, and frontend UI development</span>
+            <span>Node.js, Express, and REST APIs</span>
+            <span>MongoDB, Firestore, and data modeling</span>
+            <span>Android Studio and mobile app development</span>
+            <span>Firebase, authentication, and realtime features</span>
+            <span>Google Maps, GeoFire, and location-based tools</span>
+            <span>Git, GitHub, and collaborative workflows</span>
+            <span>Clear communication</span>
+            <span>Teamwork and leadership</span>
+            <span>Project coordination and organization</span>
+            <span>Problem solving and adaptability</span>
           </div>
         </div>
       </section>

@@ -30,10 +30,10 @@ body {
   font-family: "Manrope", system-ui, sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at top left, rgba(250, 237, 243, 0.18), transparent 30%),
-    radial-gradient(circle at top right, rgba(195, 225, 206, 0.16), transparent 28%),
-    radial-gradient(circle at 50% 20%, rgba(235, 210, 221, 0.1), transparent 34%),
-    linear-gradient(180deg, var(--bg) 0%, #0a1a13 50%, #0d261b 100%);
+    radial-gradient(circle at top left, rgba(22, 72, 49, 0.38), transparent 28%),
+    radial-gradient(circle at top right, rgba(8, 42, 27, 0.42), transparent 30%),
+    radial-gradient(circle at 50% 20%, rgba(14, 58, 37, 0.22), transparent 36%),
+    linear-gradient(180deg, #06100c 0%, #081711 42%, #0b2218 78%, #0c271c 100%);
 }
 
 body::before {
@@ -70,9 +70,9 @@ h3,
 }
 
 h1 {
-  font-size: clamp(3rem, 7vw, 5.6rem);
-  line-height: 0.95;
-  max-width: 12ch;
+  font-size: clamp(2.5rem, 5.5vw, 4.4rem);
+  line-height: 1;
+  max-width: 13ch;
 }
 
 h2 {
@@ -366,6 +366,12 @@ p {
   gap: 1.2rem;
 }
 
+.project-showcase {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.2rem;
+}
+
 .card-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -382,6 +388,54 @@ p {
   display: grid;
   gap: 1rem;
   min-height: 16rem;
+  width: 100%;
+}
+
+.project-card-featured {
+  background: linear-gradient(160deg, rgba(21, 53, 37, 0.95), rgba(13, 31, 23, 0.96));
+  min-height: 18rem;
+}
+
+.project-card-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.project-meta {
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+
+.project-points {
+  display: grid;
+  gap: 0.65rem;
+  padding-left: 1.1rem;
+  margin: 0;
+  color: var(--muted);
+}
+
+.project-points li::marker {
+  color: var(--accent);
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 0.25rem;
+}
+
+.project-tags span {
+  padding: 0.7rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid rgba(230, 210, 219, 0.16);
+  background: rgba(250, 237, 243, 0.07);
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1;
 }
 
 .project-card a {
@@ -524,6 +578,7 @@ p {
 @media (max-width: 900px) {
   .hero-grid,
   .card-grid,
+  .project-showcase,
   .timeline,
   .stack-grid,
   .about-grid,
