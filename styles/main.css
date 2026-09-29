@@ -101,6 +101,12 @@ p {
   position: relative;
 }
 
+.hero {
+  min-height: calc(100svh - 5.4rem);
+  display: grid;
+  align-items: center;
+}
+
 .section-heading {
   display: grid;
   gap: 0.9rem;
@@ -281,6 +287,24 @@ p {
   max-width: 34rem;
 }
 
+.availability {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  width: fit-content;
+  color: var(--text);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.availability span {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: #9ee6b5;
+  box-shadow: 0 0 0 0.28rem rgba(158, 230, 181, 0.12);
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -326,6 +350,63 @@ p {
   padding: 1.5rem;
   align-self: center;
   backdrop-filter: blur(12px);
+}
+
+.about-intro {
+  background: rgba(250, 237, 243, 0.035);
+  border-block: 1px solid rgba(230, 210, 219, 0.12);
+}
+
+.about-photo-wrap {
+  max-width: 25rem;
+}
+
+.about-photo {
+  width: 100%;
+  aspect-ratio: 1 / 1.08;
+  object-fit: cover;
+  border-radius: var(--radius-xl);
+  border: 1px solid rgba(250, 237, 243, 0.24);
+  filter: saturate(0.88);
+}
+
+.photo-caption {
+  margin-top: 0.8rem;
+  color: var(--accent);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.about-copy {
+  display: grid;
+  align-content: center;
+  gap: 1rem;
+  max-width: 42rem;
+}
+
+.about-copy h2 {
+  max-width: 14ch;
+}
+
+.text-link {
+  width: fit-content;
+  margin-top: 0.35rem;
+  color: var(--accent);
+  font-weight: 800;
+  border-bottom: 1px solid rgba(250, 237, 243, 0.38);
+  padding-bottom: 0.25rem;
+}
+
+.text-link span {
+  display: inline-block;
+  margin-left: 0.35rem;
+  transition: transform 0.2s ease;
+}
+
+.text-link:hover span,
+.text-link:focus-visible span {
+  transform: translateX(0.25rem);
 }
 
 .stat-list,
@@ -389,6 +470,12 @@ p {
   gap: 1rem;
   min-height: 16rem;
   width: 100%;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(250, 237, 243, 0.35);
 }
 
 .project-card-featured {
@@ -449,6 +536,43 @@ p {
   border-block: 1px solid rgba(230, 210, 219, 0.12);
 }
 
+.freelance-section {
+  background: linear-gradient(180deg, rgba(250, 237, 243, 0.04), transparent 75%);
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.service-card {
+  display: grid;
+  gap: 0.75rem;
+  min-height: 13rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(250, 237, 243, 0.2);
+  border-radius: var(--radius-lg);
+  background: rgba(250, 237, 243, 0.07);
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  background: rgba(250, 237, 243, 0.12);
+}
+
+.service-number {
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.service-card p {
+  font-size: 0.96rem;
+}
+
 .skill-list {
   display: flex;
   flex-wrap: wrap;
@@ -461,6 +585,40 @@ p {
   background: rgba(250, 237, 243, 0.07);
   border: 1px solid rgba(230, 210, 219, 0.16);
   font-weight: 600;
+}
+
+.toolkit-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.toolkit-card {
+  min-height: 15rem;
+  padding: 1.35rem;
+  border-top: 2px solid rgba(250, 237, 243, 0.65);
+  background: rgba(250, 237, 243, 0.055);
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.toolkit-card:hover {
+  transform: translateY(-4px);
+  background: rgba(250, 237, 243, 0.1);
+}
+
+.toolkit-card h3 {
+  color: var(--accent);
+  font-size: 1.1rem;
+}
+
+.toolkit-card ul {
+  display: grid;
+  gap: 0.75rem;
+  padding: 0;
+  margin: 1.2rem 0 0;
+  list-style: none;
+  color: var(--muted);
+  line-height: 1.45;
 }
 
 .timeline {
@@ -489,6 +647,10 @@ p {
   background: linear-gradient(135deg, rgba(21, 53, 37, 0.9), rgba(15, 36, 26, 0.92));
 }
 
+.contact-panel h2 {
+  margin-bottom: 0.35rem;
+}
+
 .contact-links {
   display: grid;
   gap: 0.7rem;
@@ -497,6 +659,15 @@ p {
 .contact-links a {
   font-weight: 700;
   color: var(--accent);
+  transform-origin: left center;
+  transition: transform 0.2s ease, text-decoration-thickness 0.2s ease;
+}
+
+.contact-links a:hover,
+.contact-links a:focus-visible {
+  transform: scale(1.03);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
 .page-hero {
@@ -580,6 +751,8 @@ p {
   .card-grid,
   .project-showcase,
   .timeline,
+  .service-grid,
+  .toolkit-grid,
   .stack-grid,
   .about-grid,
   .contact-panel {
@@ -594,6 +767,10 @@ p {
 @media (max-width: 720px) {
   .section {
     padding: 4rem 0;
+  }
+
+  .hero {
+    min-height: auto;
   }
 
   .nav-toggle {
