@@ -683,12 +683,16 @@ p {
 }
 
 .accent-card {
+  display: flex;
+  flex-direction: column;
   background: linear-gradient(160deg, rgba(21, 53, 37, 0.92), rgba(12, 31, 23, 0.96));
 }
 
 .value-list {
   display: grid;
-  gap: 1rem;
+  flex: 1;
+  align-content: center;
+  gap: 1.2rem;
   color: var(--muted);
 }
 
