@@ -1,11 +1,6 @@
-const yearElement = document.getElementById("year");
 const navToggle = document.querySelector(".nav-toggle");
 const siteNav = document.querySelector(".site-nav");
 const revealElements = document.querySelectorAll(".reveal");
-
-if (yearElement) {
-  yearElement.textContent = new Date().getFullYear();
-}
 
 if (navToggle && siteNav) {
   navToggle.addEventListener("click", () => {
