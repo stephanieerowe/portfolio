@@ -211,6 +211,18 @@ p {
   gap: 0.7rem;
 }
 
+.nav-group {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.nav-group-about {
+  margin-left: 0.45rem;
+  padding-left: 0.9rem;
+  border-left: 1px solid var(--line);
+}
+
 .site-nav a {
   padding: 0.8rem 1rem;
   border-radius: 999px;
@@ -674,6 +686,11 @@ p {
   padding-top: 4rem;
 }
 
+.page-hero .reveal {
+  display: grid;
+  gap: 1.5rem;
+}
+
 .narrow {
   max-width: 42rem;
 }
@@ -686,6 +703,10 @@ p {
   display: flex;
   flex-direction: column;
   background: linear-gradient(160deg, rgba(21, 53, 37, 0.92), rgba(12, 31, 23, 0.96));
+}
+
+.accent-card .card-label {
+  font-size: 1.5rem;
 }
 
 .value-list {
@@ -805,6 +826,18 @@ p {
 
   .site-nav a {
     width: 100%;
+  }
+
+  .nav-group {
+    display: grid;
+    gap: 0.3rem;
+  }
+
+  .nav-group-about {
+    margin: 0.35rem 0 0;
+    padding: 0.35rem 0 0;
+    border-top: 1px solid var(--line);
+    border-left: 0;
   }
 
   .footer-inner {
